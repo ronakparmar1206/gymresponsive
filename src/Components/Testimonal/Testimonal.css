@@ -1,0 +1,93 @@
+.say {
+  color: white;
+  font-weight: bold;
+  font-size: 3rem;
+}
+.left {
+  flex: 1 1;
+}
+.testleft {
+  display: flex;
+  flex-direction: column;
+
+  color: white;
+  letter-spacing: 0.3rem;
+}
+.testimonal {
+  /* position: relative; */
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 6rem;
+  /* background-color: aqua; */
+}
+.testleft > :nth-child(3),
+.testleft > :nth-child(4) {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 2rem;
+}
+.testright {
+  flex: 1;
+  display: flex;
+  position: relative;
+  /* left: 10rem; */
+  margin-left: 5rem;
+  top: 2rem;
+}
+.testright > img {
+  position: absolute;
+  width: 206px;
+  height: 256px;
+  margin-right: 2rem;
+  /* object-fit: cover; */
+}
+.testright > :nth-child(1) {
+  position: absolute;
+  width: 14rem;
+  height: 16rem;
+  border: 2px solid orange;
+  left: -1rem;
+  top: -1rem;
+}
+.testright > :nth-child(2) {
+  position: absolute;
+  width: 11rem;
+  height: 14rem;
+  /* border: 2px solid orange; */
+  background-color: orange;
+  left: 3rem;
+  top: 2.5rem;
+}
+.arrows {
+  position: absolute;
+  top: 20rem;
+  width: 100%;
+  margin: auto;
+  /* background-color: aqua; */
+}
+.arrows > :nth-child(1),
+.arrows > :nth-child(2) {
+  color: white;
+  /* position: relative; */
+  width: 8rem;
+  height: 3rem;
+}
+@media screen and (max-width: 600px) {
+  .testimonal {
+    display: flex;
+    flex-direction: column;
+    /* height: 200vh; */
+    margin-bottom: 26rem;
+  }
+  .testright {
+    margin-left: 5rem;
+  }
+  .arrows > :nth-child(1),
+  .arrows > :nth-child(2) {
+    color: white;
+    /* position: relative; */
+    width: 6rem;
+    height: 2rem;
+  }
+}

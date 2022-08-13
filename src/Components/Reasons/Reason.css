@@ -1,0 +1,152 @@
+.reason {
+  width: 100%;
+  display: flex;
+  padding: 1rem;
+}
+.leftreason {
+  display: grid;
+  /* width: 50%; */
+  flex: 1 1;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  grid-auto-rows: 1fr;
+  margin-top: 2rem;
+}
+.leftreason > img {
+  object-fit: cover;
+}
+.leftreason > :nth-child(1) {
+  /* grid-row: 1/2;
+
+  width: 12rem; */
+  grid-row: 1/3;
+}
+.leftreason > :nth-child(2) {
+  grid-column: 2/4;
+  height: 24rem;
+}
+.leftreason > :nth-child(3) {
+  grid-row: 2/3;
+  height: 25.7rem;
+  width: 20rem;
+}
+.leftreason > :nth-child(4) {
+  grid-column: 3/4;
+  width: 15rem;
+  height: 25.7rem;
+}
+
+.rightr {
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 4rem;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-top: 2rem;
+}
+.points {
+  text-transform: uppercase;
+  color: white;
+  display: flex;
+  gap: 2rem;
+  /* justify-content: center; */
+  align-items: center;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.points > span > img {
+  width: 2rem;
+  /* height: rem; */
+}
+.textw {
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+.some {
+  color: orange;
+}
+h1 > :nth-child(2) {
+  color: white;
+  font-weight: bold;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.brands {
+  display: flex;
+  gap: 2rem;
+}
+.brands > img {
+  width: 2rem;
+}
+p {
+  color: gray;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: normal;
+  /* text-align: center; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* letter-spacing: 0.2rem; */
+}
+@media screen and (max-width: 700px) {
+  .reason {
+    display: flex;
+    flex-direction: column;
+  }
+  .leftreason {
+    grid-auto-rows: auto;
+    overflow: hidden;
+  }
+  .leftreason > :nth-child(1) {
+    grid-row: 1/3;
+    height: 18rem;
+    width: 7rem;
+  }
+  .leftreason > :nth-child(2) {
+    grid-column: 2/4;
+    height: 10rem;
+  }
+  .leftreason > :nth-child(4) {
+    grid-column: 3/4;
+    /* grid-row: 2; */
+    height: 7.2rem;
+    width: 5rem;
+  }
+  .leftreason > :nth-child(3) {
+    grid-column: 2/3;
+    /* grid-row: 2; */
+    width: 9rem;
+    height: 7rem;
+  }
+  h1 > :nth-child(2) {
+    font-size: 2rem;
+  }
+  h1 > :nth-child(1) {
+    font-size: 2rem;
+  }
+  .rightr {
+    align-items: center;
+    padding-left: 0;
+  }
+  .some {
+    padding-top: 2rem;
+  }
+  .heading > :nth-child(1) {
+    font-size: 2.5rem;
+  }
+  .brands {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+  }
+  p {
+    text-align: center;
+  }
+}

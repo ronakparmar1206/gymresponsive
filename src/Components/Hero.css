@@ -1,0 +1,359 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+
+  list-style: none;
+}
+.first-section {
+  width: 100%;
+  /* position: relative; */
+  /* height: 100%; */
+  display: flex;
+  /* background-color: #3c3f45;
+  background-image: url(==); */
+  /* background-color: darkgray; */
+  justify-content: space-between;
+  /* mix-blend-mode: overlay; */
+}
+.heroblur {
+  width: 22rem;
+  height: 30rem;
+  left: 2rem;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+.logo {
+  width: 10rem;
+  height: 3rem;
+  /* background-color: black; */
+}
+.left {
+  padding: 2rem;
+  width: 80%;
+  /* background-color: darkgray; */
+}
+.left::after {
+  background-color: red;
+  width: 20px;
+}
+.navbar {
+  list-style: none;
+  display: flex;
+  color: white;
+  gap: 2rem;
+}
+.navbar li a {
+  color: white;
+}
+.navbar > li > a:hover {
+  cursor: pointer;
+  color: orange;
+}
+.add {
+  position: relative;
+  border-radius: 50px;
+  color: whitesmoke;
+  text-transform: uppercase;
+  background-color: #363d42;
+  width: fit-content;
+  margin: 8rem 2rem;
+  padding: 20px 13px;
+  z-index: 2;
+  /* overflow: hidden; */
+}
+.add::before {
+  content: "";
+  position: absolute;
+  background-color: orange;
+  width: 6rem;
+  height: 80%;
+  top: 6px;
+  left: 2;
+  z-index: -1;
+  border-radius: 3rem;
+  animation: slide 2s ease-in-out infinite alternate;
+
+  /* height: ; */
+}
+.flex {
+  display: none;
+}
+@keyframes slide {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 70%;
+  }
+}
+
+.text {
+  text-transform: uppercase;
+  font-size: 4.5rem;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.textw {
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+.text > div:nth-child(3) {
+  font-size: 1rem;
+  font-weight: 200;
+  text-transform: none;
+}
+.figure {
+  display: flex;
+  gap: 2rem;
+}
+.figure > div {
+  display: flex;
+  flex-direction: column;
+}
+.figure > div > span:nth-child(1) {
+  color: white;
+  font-size: 2rem;
+}
+.figure > div > span:nth-child(2) {
+  color: gray;
+  text-transform: uppercase;
+}
+.buttons {
+  display: flex;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+.btn {
+  background-color: white;
+  padding: 0.5rem;
+  font-weight: bold;
+  border: 4px solid transparent;
+  transition: 300ms all;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.buttons > :nth-child(1) {
+  color: white;
+  background-color: orange;
+  border-radius: 25px;
+}
+.buttons > :nth-child(2) {
+  color: white;
+  background-color: transparent;
+  border: 1px solid orange;
+  border-radius: 25px;
+}
+.right {
+  width: 20%;
+  position: relative;
+  background-color: orange;
+}
+.right > .btn {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+}
+.heart {
+  display: flex;
+  width: fit-content;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+  padding: 1rem;
+  gap: 1rem;
+  border-radius: 10px;
+  background-color: #363d42;
+  margin-top: 10rem;
+  position: absolute;
+  right: 20%;
+}
+.heart > :nth-child(3) {
+  color: white;
+  font-size: 2rem;
+}
+.heart > :nth-child(2) {
+  color: #4e4f50;
+}
+.heart > img {
+  width: 2rem;
+}
+.heroimage {
+  position: relative;
+  /* z-index: 3; */
+  /* left: 0; */
+}
+.hero {
+  width: 300px;
+  position: absolute;
+  top: 13rem;
+  right: 19rem;
+  /* z-index: 2; */
+}
+.back {
+  position: absolute;
+  top: 6rem;
+  right: 25rem;
+  z-index: -1;
+  width: 250px;
+}
+.calories {
+  display: flex;
+  background-color: gray;
+  width: fit-content;
+  gap: 1rem;
+  padding: 1rem;
+  position: absolute;
+  top: 32rem;
+  right: 35rem;
+  border-radius: 10px;
+}
+@media screen and (max-width: 700px) {
+  .first-section {
+    flex-direction: column;
+  }
+  .navbar {
+    display: none;
+  }
+  .flex {
+    display: flex;
+    color: white;
+    cursor: pointer;
+    position: relative;
+  }
+  .na {
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 100;
+  }
+  .na li a {
+    color: white;
+  }
+  .na li {
+    margin: 0.5rem 0;
+    /* background-color: aqua; */
+    text-align: start;
+  }
+  .text {
+    font-size: xx-large;
+  }
+  .hero {
+    position: relative;
+    align-self: center;
+    left: 4rem;
+    width: 10rem;
+    top: 0rem;
+  }
+  .add::before {
+    width: 4.8rem;
+  }
+  .heroblur {
+    width: 11rem;
+  }
+  .add {
+    position: relative;
+    border-radius: 50px;
+    color: whitesmoke;
+    text-transform: uppercase;
+    background-color: #363d42;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 5rem 2rem;
+    padding: 6px 13px;
+    z-index: 2;
+    font-size: smaller;
+  }
+  .figure {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .buttons {
+    justify-content: center;
+    align-items: center;
+  }
+  .heart > img {
+    width: 1rem;
+  }
+  .heart > :nth-child(3) {
+    color: white;
+    font-size: small;
+  }
+  .left {
+    /* flex: 1 1; */
+    width: 100%;
+    text-align: center;
+  }
+  .figure > div > span:nth-child(2) {
+    color: gray;
+    text-transform: uppercase;
+    font-size: xx-small;
+  }
+  .figure > div > span:nth-child(1) {
+    color: white;
+    font-size: x-large;
+  }
+  .right {
+    background-color: transparent;
+    padding-top: 7rem;
+    width: 100%;
+  }
+  .heart {
+    display: flex;
+    /* width: -moz-fit-content; */
+    /* width: fit-content; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: 1rem; */
+    gap: 1rem;
+    border-radius: 10px;
+    background-color: #363d42;
+    /* margin-top: 10rem; */
+    position: absolute;
+    left: 14rem;
+    top: -1rem;
+    right: 20%;
+    width: 99px;
+    height: 98px;
+    padding: 0;
+    margin-top: 5rem;
+  }
+  .calories {
+    display: flex;
+    background-color: gray;
+    width: 10rem;
+    /* gap: 1rem; */
+    /* padding: 1rem; */
+    /* position: relative; */
+    top: 1rem;
+    /* right: 35rem; */
+    left: 6rem;
+    border-radius: 10px;
+    position: relative;
+  }
+  .calories > img {
+    width: 2rem;
+  }
+  .calories > div > :nth-child(1),
+  .calories > div > :nth-child(2) {
+    font-size: 1rem;
+    color: white;
+  }
+}
